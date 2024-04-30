@@ -249,15 +249,10 @@ header .navbar {
     border-radius: 4px;
     background: #000;
   }
-
-  .hero-section .search-form button {
-    margin-top: 10px;
-    border-radius: 4px;
-    width: 100%;
-    background: black;
-  }
-
+  
   .hero-section .popular-tags {
     display: none;
   }
 }
+
+/* cards */
