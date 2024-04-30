@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<!-- Coding by CodingNepal || www.codingnepalweb.com -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Boxicons CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/blog/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>NOTÍCIAS</title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="css/noticia.css" />
+</head>
+
+<body>
+    <div id="aoCarregar"></div>
+    <!-- navbar -->
+    <nav class="navbar hoverable">
+        <div class="logo_item">
+            <i class="bx bx-menu" id="sidebarOpen"></i>
+            <img src="imagens/imagens/logo.png" alt=""></i>SafeCup
+        </div>
+
+        <div class="search_bar">
+            <input type="text" placeholder="Procurar..." />
+        </div>
+
+        <div class="navbar_content">
+            <img src="imagens/imagens/logo.png" alt="" class="profile" />
+        </div>
+    </nav>
+
+    <!-- sidebar -->
+    <nav class="sidebar">
+        <div class="menu_content">
+            <ul class="menu_items">
+                <div class="menu_title menu_menu"></div>
+                <!-- duplicate or remove this li tag if you want to add or remove navlink with submenu -->
+                <!-- start -->
+                <li class="item">
+                    <div href="home.html" class="nav_link submenu_item">
+                        <span class="navlink_icon">
+                            <i class="bx bx-home-alt"></i>
+                        </span>
+                        <span class="navlink">Home</span>
+                    </div>
+                    <!-- end -->
+
+                    <!-- duplicate this li tag if you want to add or remove  navlink with submenu -->
+                    <!-- start -->
+                <li class="item">
+                    <div href="#" class="nav_link submenu_item">
+                        <span class="navlink_icon">
+                            <i class="bx bx-grid-alt"></i>
+                        </span>
+                        <span class="navlink">Produtos</span>
+                        <i class="bx bx-chevron-right arrow-left"></i>
+                    </div>
+
+                    <ul class="menu_items submenu">
+                        <a href="#" class="nav_link sublink">Linha Hidratação</a>
+                        <a href="#" class="nav_link sublink">Linha Universitária</a>
+                        <a href="#" class="nav_link sublink">Linha Café</a>
+                        <a href="#" class="nav_link sublink">Linha Mate</a>
+                        <a href="#" class="nav_link sublink">Linha Bar</a>
+                    </ul>
+                </li>
+                <!-- end -->
+                <li class="item">
+                    <a href="#" class="nav_link">
+                        <span class="navlink_icon">
+                            <i class="bx bx-loader-circle"></i>
+                        </span>
+                        <span class="navlink">Login</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#" class="nav_link">
+                        <span class="navlink_icon">
+                            <i class="bx bx-layer"></i>
+                        </span>
+                        <span class="navlink">Cadastro</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#" class="nav_link">
+                        <span class="navlink_icon">
+                            <i class="bx bx-filter"></i>
+                        </span>
+                        <span class="navlink">Contato</span>
+                    </a>
+                </li>
+            </ul>
+
+
+            <li class="item">
+                <div href="#" class="nav_link submenu_item">
+                    <span class="navlink_icon">
+                        <i class="bx bx-grid-alt"></i>
+                    </span>
+                    <span class="navlink">Nossa Empresa</span>
+                    <i class="bx bx-chevron-right arrow-left"></i>
+                </div>
+
+                <ul class="menu_items submenu">
+                    <a href="#" class="nav_link sublink">Nossas Lojas</a>
+                    <a href="#" class="nav_link sublink">Sobre Nós</a>
+                </ul>
+            </li>
+            <ul class="menu_items">
+                <div class="menu_title menu_items"></div>
+                <li class="item">
+                    <a href="noticias.html" class="nav_link">
+                        <span class="navlink_icon">
+                            <i class="bx bx-flag"></i>
+                        </span>
+                        <span class="navlink">Quadro de Notícias</span>
+                    </a>
+                </li>
+
+                <li class="item">
+                    <a href="#" class="nav_link">
+                        <span class="navlink_icon">
+                            <i class="bx bx-medal"></i>
+                        </span>
+                        <span class="navlink">Avaliações</span>
+                    </a>
+                </li>
+                <!-- end -->
+            </ul>
+
+            <!-- Sidebar Open / Close -->
+            <div class="bottom_content">
+                <div class="bottom expand_sidebar">
+                    <span> Sair</span>
+                    <i class='bx bx-log-in'></i>
+                </div>
+                <div class="bottom collapse_sidebar">
+                    <span> Sair</span>
+                    <i class='bx bx-log-out'></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container marginTop marginLeft">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row mb-2">
+                    <div class="col-md-6">
+                        <div
+                            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <strong class="d-inline-block mb-2 text-primary-emphasis">Vítima do próprio
+                                    sucesso?</strong>
+                                <p class="card-text mb-auto">Os novos produtos da marca SafeCup chegarão ao mercado com
+                                    selo,
+                                    criado com
+                                    tecnologia suiça anticópia, para facilitar a identificação de autenticidade dos
+                                    copos e
+                                    garrafas térmicas</p>
+                                <a href="#" class="icon-link gap-1 icon-link-hover stretched-link"
+                                    style="color: black;">
+                                    Continue lendo...
+                                    <svg class="bi">
+                                        <use xlink:href="#chevron-right" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="col-auto d-none d-lg-block">
+                                <img src="imagens/imagens/trilha.jpeg" width="200" height="250" alt="Produto 3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div
+                            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <strong class="d-inline-block mb-2 text-success-emphasis">SafeCup aposta em copos
+                                    térmicos para
+                                    cervejeiros…</strong>
+                                <p class="mb-auto">A SafeCup lança, neste mês, sua linha 'Happy Hour'...</p>
+                                <a href="#" class="icon-link gap-1 icon-link-hover stretched-link"
+                                    style="color: black;">
+                                    Continue Lendo...
+                                    <svg class="bi">
+                                        <use xlink:href="#chevron-right" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="col-auto d-none d-lg-block">
+                                <img src="imagens/imagens/pordosolbanner.jpeg" width="200" height="250" alt="Produto 3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-5">
+                    <div class="col-md-8">
+                        <h3 class="pb-4 mb-4 fst-italic border-bottom">
+                            A criação de um novo tipo de copo que muda de cor na presença de drogas usadas em estupro
+                            tem
+                            gerado polêmica - e justamente entre ativistas anti-estupro.
+                        </h3>
+
+                        <article class="blog-post">
+                            <h2 class="display-5 link-body-emphasis mb-1">Copo que detecta 'Boa noite Cinderela' ganha
+                                elogios, mas vira polêmica</h2>
+                            <p class="blog-post-meta">Repórter G1
+                                No AR em 4/08/2021 - 09:00<a href="#"></a></p>
+
+                            <p>Copo mudaria de cor na presença de drogas em bebidas; ativistas alegam que criação
+                                reforça visão
+                                de que a mulher é a responsável por evitar estupro.</p>
+                            <p>O projeto, que está sendo desenvolvido pela empresa "SafeCup", de quatro estudantes
+                                universitárias da Universidade de São Caetano do Sul prevê que o copo mude de cor em
+                                contato
+                                com uma bebida que contenha drogas usadas em estupros, como GHB e Rohypnol.</p>
+                            <p>A ideia foi inicialmente elogiada, com centenas de milhares de curtidas e
+                                compartilhamentos no
+                                Facebook e no Twitter.</p>
+                            <p>"Com o nosso copo, qualquer mulher vai ter poderes para garantir discretamente sua
+                                segurança,
+                                simplesmente vendo o copo mudando de cor", disse a empresa.</p>
+                            <hr>
+
+                            <h2>Copo antidroga: alternativa pode evitar golpe comum na noite</h2>
+                            <p>Repórter TV Brasi
+                                No AR em 16/06/2022 - 19:00</p>
+                            <blockquote class="blockquote">
+                                <p>Em Gravataí, na região metropolitana de Porto Alegre, quatro estudantes do ensino
+                                    médio
+                                    pensaram numa forma de evitar o famoso golpe "boa noite Cinderela". Motivadas por um
+                                    projeto
+                                    da escola, elas se uniram pra desenvolver um copo que muda de cor, quando a bebida é
+                                    batizada.</p>
+                            </blockquote>
+                            <h3 class="pb-4 mb-4 fst-italic border-bottom">
+                                <h2>Estudantes Brasileiras criam canudo "anti-estupro" que identifica drogas em bebidas
+                                </h2>
+                                <p>Repórter Brasil
+                                    No AR em 10/11/2022 - 07:00</p>
+                                <p>Três estudantes Brasileiras acabam de criar um projeto que tende a prevenir casos de
+                                    estupro
+                                    e assédio. Julia Caruso, Sophia Custodio, Nicole marchiole e Livia Toreto,
+                                    desenvolveram um
+                                    copo capaz de identificar a existência de drogas em bebida.</p>
+
+                                <p>Na prática, o muda de cor, atingindo um azul intenso, quando entra em contato com
+                                    três
+                                    tipos de drogas muito comuns: anfetaminas, soníferos e anestésicos. "Sabemos que não
+                                    é uma
+                                    solução definitiva, porque não acaba de vez com o estupro. Porém, esperamos
+                                    contribuir para
+                                    diminuir a incidência de casos de violência sexual e de outras situações perigosas
+                                    provocadas
+                                    pelo contato com as drogas”, acrescenta a estudante.</p>
+                                <h3 class="pb-4 mb-4 fst-italic border-bottom">
+                                    <h2>"COPO ANTI ASSÉDIO: OBJETO DETECTOR DE ALTERAÇÕES DO NÍVEL DE PH EM DIFERENTES
+                                        LÍQUIDOS
+                                        UTILIZANDO MICROCONTROLADORES "</h2>
+                                    <p>Repórter FBJC
+                                        No AR em 21/01/2023 - 15:30</p>
+                                    <p>Há muito tempo as pessoas sofrem do golpe chamado “Boa Noite, Cinderela”, a
+                                        vítima tem
+                                        seus
+                                        sentidos alterados pelo consumo de bebida adulterada por fármacos, por conta da
+                                        amnésia
+                                        temporária após a dopagem, poucos casos são relatados. Os objetivos do estudo
+                                        são
+                                        analisar as
+                                        alterações que a inserção de drogas gera em bebidas e criar um dispositivo que
+                                        identifique e
+                                        sinalize alterações de pH em diferentes líquidos. Acredita-se que a inserção de
+                                        fármacos
+                                        que
+                                        causam sonolência pode alterar quimicamente a bebida, e que a criação de um copo
+                                        com
+                                        sensores de
+                                        pH e motor de vibração, avisará se houver alteração no pH da bebida, alertando o
+                                        usuário. A
+                                        metodologia consistirá em testes de pH, com pHmetro, utilizando dois fármacos,
+                                        Fenergan
+                                        25mg e
+                                        Miosan 10 mg, diluídos em 20ml de água, em 240 ml de três tipos de bebidas: água
+                                        mineral, suco
+                                        artificial sabor uva e refrigerante sabor guaraná. A medição do pH ocorrerá
+                                        antes e
+                                        depois da
+                                        inserção dos fármacos, havendo também testes controle. O copo possuirá 17 cm de
+                                        altura,
+                                        8,5 cm
+                                        de diâmetro em sua base e 9,8 cm de diâmetro em sua boca, terá um motor de
+                                        vibração na
+                                        parte
+                                        inferior juntamente com a placa de microcontrolador, na lateral interna ficará o
+                                        sensor
+                                        de pH.
+                                        Como resultados parciais, ambos os fármacos apresentaram alterações no nível de
+                                        pH em
+                                        alguns
+                                        líquidos após a sua inserção. Estes resultados apontam que o estudo possui
+                                        grande
+                                        potencial de
+                                        alertar as vítimas antes que o crime ocorra.</p>
+                        </article>
+
+
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="position-sticky" style="top: 2rem;">
+                            <div class="p-4 mb-3 bg-body-tertiary rounded">
+                                <h4 class="fst-italic">Sobre</h4>
+                                <p class="mb-0">A abordagem da equipa SafeCup é simples: Transformamos copos
+                                    em proteção anti drogas. Dos copos a garrafas, procuramos oferecer soluções
+                                    inovadoras!.</p>
+                            </div>
+
+                            <div>
+                                <h4 class="fst-italic">Postagens Recentes</h4>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                                            href="#">
+                                            <img src="imagens/imagens/skatebanner.jpeg" width="100" alt="Produto 3">
+                                            <div class="col-lg-8">
+                                                <h6 class="mb-0">"Coração de vagabundo bate na sola do pé...
+                                                    Skate na veia..."</h6>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                                            href="#">
+                                            <img src="imagens/imagens/marbanner.jpeg" width="100" alt="Produto 3">
+                                            <div class="col-lg-8">
+                                                <h6 class="mb-0">"Viver não é necessário. Necessário é criar."</h6>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                                            href="#">
+                                            <img src="imagens/imagens/carrobanner.jpeg" width="100" alt="Produto 3">
+                                            <div class="col-lg-8">
+                                                <h6 class="mb-0">"Dirijo com meu carro com o coração e acelero com a
+                                                    alma."</h6>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container marginTop marginLeft">
+        <div class="row">
+            <footer class="text-light">
+                <div class="container-fluid py-3">
+                    <div class="row justify-content-evenly">
+                        <div class="col-md-2 col-sm-12">
+                            <h1>CATEGORIAS</h1>
+                            <li class="nav-link"><a href="#" class="rodape">Retornar à Loja</a></li>
+                            <li class="nav-link"><a href="#" class="rodape">Sobre</a></li>
+                            <li class="nav-link"><a href="#" class="rodape">Contato</a></li>
+                            <li class="nav-link"><a href="#" class="rodape">Suporte</a></li>
+                        </div>
+                        <div class="col-md-2 col-sm-12">
+                            <h1>AJUDA</h1>
+                            <li class="nav-link"><a href="#" class="rodape">Central de Atendimento</a></li>
+                            <li class="nav-link"><a href="#" class="rodape">Seus pedidos</a></li>
+                            <li class="nav-link"><a href="#" class="rodape">Garantia Vitalícia</a></li>
+                            <li class="nav-link"><a href="#" class="rodape">Trocas de devoluções</a></li>
+                        </div>
+                        <div class="col-md-2 col-sm-12">
+                            <h1>SOBRE</h1>
+                            <li class="nav-link"><a href="#" class="rodape">Sobre nós</a></li>
+                            <li class="nav-link"><a href="#" class="rodape">Imprensa</a></li>
+                            <li class="nav-link"><a href="#" class="rodape">Responsabilidade</a></li>
+                            <li class="nav-link"><a href="#" class="rodape">Nossas lojas</a></li>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <h1>CADASTRE-SE</h1>
+                            <hr>
+                            <form class="row g-3">
+                                <div class="col-auto">
+                                    <label for="inputPassword2" class="visually-hidden">Email</label>
+                                    <input type="email" class="form-control" id="inputPassword2"
+                                        placeholder="Digite seu email">
+                                </div>
+                                <div class="col-auto">
+                                    <div class="col-auto">
+                                        <button class="btn btn-primary" type="button" style="width: 320px;"
+                                            onclick="mostrar()">Enviar</button>
+
+                                        <script type="text/javascript">
+
+                                            function mostrar() {
+
+                                                swal('Enviado!', 'Dentro de 15 minutos uma mensagem será enviado para o email cadastrado para confirmação de acesso.')
+
+
+
+                                            }
+
+                                        </script>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <ul>
+                                <img src="imagens/imagens/logo.png" width="150px">
+                            </ul>
+                            <ul class="nav">
+                                <img src="imagens/imagens/pagamento.png" width="250px">
+                            </ul>
+                        </div>
+                        <table>
+                            <tr>
+                                <td>
+
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="text">
+                    &copy 2023 Copyright: <a href="#" class="rodape">Lojas Virtuais</a>
+                </div>
+                <div class="text">
+                    SafeCup <a href="home" class="rodape">HomePage</a>
+                </div>
+            </footer>
+            <!-- footer! -->
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="js/noticia.js"></script>
+</body>
+
+</html>
